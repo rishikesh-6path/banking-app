@@ -41,11 +41,11 @@ class SelectAccountPageState extends State<SelectAccountPage> {
   int selectedIndex = 0;
 
   List<ReceiverModel> receivers = [
-    ReceiverModel('Tau', '0937110938', '1234 0000 0099 0909'),
-    ReceiverModel('Kaka', '0937110938', '1234 0000 0099 0909'),
-    ReceiverModel('Nick', '0937110938', '1234 0000 0099 0909'),
-    ReceiverModel('Babdya', '0937110938', '1234 0000 0099 0909'),
-    ReceiverModel('Babdi', '0937110938', '5678 0000 0099 0909'),
+    ReceiverModel('rahul', '0937110938', '1234 0000 0099 0909'),
+    ReceiverModel('priya', '0937110938', '1234 0000 0099 0909'),
+    ReceiverModel('rohan', '0937110938', '1234 0000 0099 0909'),
+    ReceiverModel('Shahul', '0937110938', '1234 0000 0099 0909'),
+    ReceiverModel('john', '0937110938', '5678 0000 0099 0909'),
   ];
 
   List<ReceiverModel> searchResults = [];

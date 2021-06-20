@@ -24,24 +24,11 @@ class BankCard extends StatelessWidget {
                 children: <Widget>[
                   Padding(
                     padding: const EdgeInsets.only(top: 20.0, right: 16.0),
-                    child: Text(
-                      'BALANCE',
-                      textAlign: TextAlign.right,
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 10.0,
-                          fontWeight: FontWeight.bold),
-                    ),
+
                   ),
                   Padding(
                     padding: const EdgeInsets.only(right: 16.0),
-                    child: Text(
-                      '\₹ ${card.balance}',
-                      style: TextStyle(
-                          color: Colors.white,
-//                        fontSize: 10.0,
-                          fontWeight: FontWeight.bold),
-                    ),
+
                   ),
                 ],
               ),

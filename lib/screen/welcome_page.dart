@@ -11,7 +11,8 @@ class WelcomePage extends StatelessWidget {
           Expanded(
             child: Container(
               child: Center(
-                child: Image.asset('images/griplogo.png'),
+                child: Image.asset('images/banklogo.png',
+                height: 200.0,),
               ),
             ),
           ),
@@ -21,36 +22,19 @@ class WelcomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Text(
-                  "Welcome To Sush's Bank",
+                  "Welcome To Rtx Bank",
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
                     color: Colors.deepPurple,
                   ),
                 ),
-                Column(
-                  children: [
-                    Text(
-                      "Sponsored By Spark Foundation ",
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Text(
-                      "Attach with Grip Bank In Real Time",
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                ),
+
                 Container(
                   height: 45,
                   width: 300,
                   child: RaisedButton(
-                    color: Colors.blueAccent,
+                    color: Colors.redAccent,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30)),
                     onPressed: () {
@@ -60,8 +44,8 @@ class WelcomePage extends StatelessWidget {
                               builder: (context) => new LoginPage()));
                     },
                     child: Text(
-                      "Login Page",
-                      style: TextStyle(color: Colors.white),
+                      "Login",
+                      style: TextStyle(color: Colors.black),
                     ),
                   ),
                 ),

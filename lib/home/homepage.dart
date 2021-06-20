@@ -9,14 +9,14 @@ class HomePage extends StatefulWidget {
 
 class HomePageState extends State<HomePage> {
   final List<BankCardModel> cards = [
-    BankCardModel('images/bg_blue_card.png', 'Sushank Hole',
-        '4221 5168 7464 2283', '08/20', 10000000),
-    BankCardModel('images/bg_blue_circle_card.png', 'Sushank Hole',
-        '4221 5168 7464 2283', '08/20', 10000000),
-    BankCardModel('images/bg_purple_card.png', 'Sushank Hole',
-        '4221 5168 7464 2283', '08/20', 10000000),
-    BankCardModel('images/bg_red_card.png', 'Sushank Hole',
-        '4221 5168 7464 2283', '08/20', 10000000),
+    BankCardModel('images/bg_blue_card.png', 'Rishikesh Swaminathan',
+        '4508 5505 4398 2378', '11/26', 10000000),
+    BankCardModel('images/bg_blue_circle_card.png', 'Rishikesh Swaminathan',
+        '4508 5505 5852 4587', '02/22', 10000000),
+    BankCardModel('images/bg_purple_card.png', 'Rishikesh Swaminathan',
+        '4508 4785 2568 4521', '12/27', 10000000),
+    BankCardModel('images/bg_red_card.png', 'Rishikesh Swaminathan',
+        '4585 4564 7139 8426', '07/23', 10000000),
   ];
 
   double screenWidth = 0.0;
@@ -55,12 +55,12 @@ class HomePageState extends State<HomePage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
-                child: Text('S'),
+                child: Text('R'),
               ),
               Container(
                 margin: EdgeInsets.symmetric(horizontal: 4.0),
                 child: Text(
-                  'SUSHANK  HOLE',
+                  'Rishikesh Swaminathan',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
               )
@@ -109,7 +109,7 @@ class HomePageState extends State<HomePage> {
         children: <Widget>[
           Padding(
               padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 15.0),
-              child: Text('My Bank Accounts')),
+              child: Text('My Bank Cards')),
           Container(
             margin: EdgeInsets.symmetric(horizontal: 8.0),
             height: 166.0,
@@ -235,11 +235,12 @@ class HomePageState extends State<HomePage> {
                     child: Column(
                       children: <Widget>[
                         CircleAvatar(
-                          child: Text('T'),
+                          child: Text(''
+                              'R'),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 8.0),
-                          child: Text('Tau'),
+                          child: Text('Rahul'),
                         )
                       ],
                     ),
@@ -249,11 +250,11 @@ class HomePageState extends State<HomePage> {
                     child: Column(
                       children: <Widget>[
                         CircleAvatar(
-                          child: Text('k'),
+                          child: Text('P'),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 8.0),
-                          child: Text('kaka'),
+                          child: Text("Priya"),
                         )
                       ],
                     ),
@@ -263,11 +264,11 @@ class HomePageState extends State<HomePage> {
                     child: Column(
                       children: <Widget>[
                         CircleAvatar(
-                          child: Text('N'),
+                          child: Text('J'),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 8.0),
-                          child: Text('Nick'),
+                          child: Text('John'),
                         )
                       ],
                     ),
@@ -298,7 +299,7 @@ class HomePageState extends State<HomePage> {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8.0),
                   child: Text(
-                    'Utilities',
+                    'Services',
                     style:
                         TextStyle(fontSize: 14.0, fontWeight: FontWeight.w700),
                   ),
@@ -323,7 +324,7 @@ class HomePageState extends State<HomePage> {
                         Padding(
                           padding: const EdgeInsets.only(top: 8.0),
                           child:
-                              Text('Mobile', style: TextStyle(fontSize: 12.0)),
+                              Text('Recharge', style: TextStyle(fontSize: 12.0)),
                         )
                       ],
                     ),
@@ -339,7 +340,7 @@ class HomePageState extends State<HomePage> {
                         Padding(
                           padding: const EdgeInsets.only(top: 8.0),
                           child: Text(
-                            'Electricity',
+                            'Electricity bill',
                             style: TextStyle(fontSize: 12.0),
                           ),
                         )

@@ -7,14 +7,14 @@ class ProfilePage extends StatefulWidget {
 }
 
 class ProfilePageState extends State<ProfilePage> {
-  final List<BankCardModel> cards = [
-    BankCardModel('images/bg_red_card.png', 'Sushank Hole',
+   List<BankCardModel> cards = [
+    BankCardModel('images/bg_red_card.png', 'RTX bank',
         '4221 5168 7464 2283', '08/20', 10000000),
-    BankCardModel('images/bg_blue_circle_card.png', 'Sushank Hole',
+    BankCardModel('images/bg_blue_circle_card.png', 'RTX bank',
         '4221 5168 7464 2283', '08/20', 10000000),
-    BankCardModel('images/bg_purple_card.png', 'Sushank Hole',
+    BankCardModel('images/bg_purple_card.png', 'RTX bank',
         '4221 5168 7464 2283', '08/20', 10000000),
-    BankCardModel('images/bg_blue_card.png', 'Sushank Hole',
+    BankCardModel('images/bg_blue_card.png', 'RTX bank',
         '4221 5168 7464 2283', '08/20', 10000000),
   ];
 

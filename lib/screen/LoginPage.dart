@@ -15,8 +15,8 @@ class _State extends State<LoginPage> {
     return new Scaffold(
       appBar: new AppBar(
         centerTitle: true,
-        backgroundColor: Colors.black,
-        title: new Text("Account Page"),
+        backgroundColor: Colors.red,
+        title: new Text("Login Page"),
       ),
       body: Padding(
           padding: EdgeInsets.all(10),
@@ -28,16 +28,7 @@ class _State extends State<LoginPage> {
                 height: 300,
                 fit: BoxFit.fill,
               ),
-              Container(
-                  alignment: Alignment.center,
-                  padding: EdgeInsets.all(10),
-                  child: Text(
-                    'Welcome !!',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 30),
-                  )),
+
               Container(
                   alignment: Alignment.center,
                   padding: EdgeInsets.all(10),
@@ -51,7 +42,7 @@ class _State extends State<LoginPage> {
                   controller: nameController,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: 'User Name',
+                    labelText: 'Account Number',
                   ),
                 ),
               ),
@@ -62,7 +53,7 @@ class _State extends State<LoginPage> {
                   controller: passwordController,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: 'Password',
+                    labelText: 'Mpin',
                   ),
                 ),
               ),

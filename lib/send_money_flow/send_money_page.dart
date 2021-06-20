@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sush_bank/models/receiver_model.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
+import 'package:sush_bank/send_money_flow/select_account_page.dart';
+
 
 class SendMoneyPageRoute extends PageRouteBuilder {
   SendMoneyPageRoute(ReceiverModel receiver)
@@ -296,10 +299,16 @@ class SendMoneyPageState extends State<SendMoneyPage> {
   Widget _getSendSection() {
     return Container(
       margin: EdgeInsets.all(16.0),
-      child: GestureDetector(
-        onTapUp: (tapDetail) {
-          Navigator.popUntil(context, ModalRoute.withName('/'));
-        },
+      child: TextButton(
+        onPressed:(){return Alert(context: context,
+            title: "Money Sent",
+        desc: "Money has been sent from Your bank account",
+        buttons: [DialogButton(
+            child: Text("Okay"),
+            onPressed: (){
+              Navigator.push(context, SelectAccountPageRoute());
+        })
+        ]).show();} ,
         child: Container(
           width: double.infinity,
           height: 50.0,
@@ -320,3 +329,7 @@ class SendMoneyPageState extends State<SendMoneyPage> {
     );
   }
 }
+// void MoneySent(){
+//  Center(child: Container(child: Text("Money Sent")));
+// }
+
